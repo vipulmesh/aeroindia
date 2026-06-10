@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Aeroindia — collaborate on UAV development, request a demo, or register for UDAAN 2026.">
+  <meta name="description" content="Contact Aeroindia — collaborate on UAV systems development, request a product demo, or register inquiries.">
   <title>Contact — Aeroindia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,18 +12,130 @@
   <link rel="apple-touch-icon" href="assets/aeroindia-logo.png">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="min-h-screen bg-bg text-foreground antialiased overflow-x-hidden">
   <div class="grain-overlay" aria-hidden="true"></div>
   <div class="scanline" aria-hidden="true"></div>
 
   <div id="site-nav"></div>
 
-  <main>
-    <!-- STUB: Phase 5 will populate full page content -->
-    <p style="padding:8rem 2rem;color:#e0863d;font-family:monospace;">contact.html — Phase 5 content pending</p>
+  <main class="relative z-10 pt-28 md:pt-32">
+    <!-- PAGE HERO -->
+    <section class="relative min-h-[60vh] flex flex-col justify-end overflow-hidden bg-cinematic-navy pt-32 pb-20 lg:pb-28" aria-label="Contact hero">
+      <div class="absolute inset-0 grid-overlay opacity-20" aria-hidden="true"></div>
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" aria-hidden="true">
+        <path class="trajectory-path" d="M-50,220 Q400,100 900,200 T1900,160" fill="none" stroke="#E0863D" stroke-width="1"/>
+        <path class="trajectory-path" d="M-50,370 Q300,270 800,350 T1700,310" fill="none" stroke="#E77A22" stroke-width="0.6" opacity="0.7"/>
+      </svg>
+
+      <div class="logo-watermark-zone absolute right-6 top-24 hidden md:block" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark">
+          <img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68">
+        </div>
+      </div>
+
+      <div class="relative mx-auto w-full max-w-[1400px] px-6 lg:px-10">
+        <div class="page-hero-logo-wrap">
+          <div class="logo-plate logo-plate--hero">
+            <img src="assets/aeroindia-logo.png" alt="Aeroindia" class="logo-img logo-hero" width="200" height="76" decoding="async">
+          </div>
+        </div>
+        <p class="section-label mb-4" data-reveal>Partnership &amp; Demos</p>
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight leading-[0.92] max-w-4xl" data-reveal>
+          GET IN<br>
+          <span class="text-accent">TOUCH</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-muted-text leading-relaxed" data-reveal>
+          Collaborate on bespoke UAV development, request a live platform demonstration, or contact our engineering team.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT DETAILS & FORM -->
+    <section class="relative py-24 lg:py-32 border-t border-border bg-surface">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          
+          <!-- Contact Detail Cards -->
+          <div class="lg:col-span-5 space-y-6" data-reveal>
+            <p class="section-label">01 — Office</p>
+            <h2 class="section-heading mb-6">Contact Channels</h2>
+            
+            <div class="space-y-4">
+              <!-- Card: Email -->
+              <div class="card-tech p-6 rounded-2xl">
+                <span class="font-mono text-[10px] text-accent uppercase tracking-label">Email Inquiries</span>
+                <p class="font-display text-lg font-bold mt-2">
+                  <a href="mailto:aeroindia1402@gmail.com" class="hover:text-accent transition-colors duration-300">
+                    aeroindia1402@gmail.com
+                  </a>
+                </p>
+                <p class="text-xs text-muted-text mt-1">Typical response time: Under 24 hours</p>
+              </div>
+
+              <!-- Card: Headquarters -->
+              <div class="card-tech p-6 rounded-2xl">
+                <span class="font-mono text-[10px] text-accent uppercase tracking-label">Headquarters</span>
+                <p class="font-display text-lg font-bold mt-2 text-foreground">RSCOE Innovation Lab</p>
+                <p class="text-xs text-muted-text mt-1">Pune, Maharashtra, India</p>
+              </div>
+
+              <!-- Card: Funding & Affiliation -->
+              <div class="card-tech p-6 rounded-2xl">
+                <span class="font-mono text-[10px] text-accent-secondary uppercase tracking-label">Affiliation</span>
+                <p class="font-display text-lg font-bold mt-2 text-foreground">RSCOE IIF </p>
+                <p class="text-xs text-muted-text mt-1">Incubated Startup · Supported by RSCOE Innovation &amp; Incubation Foundation</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="lg:col-span-7 bg-bg border border-border p-8 rounded-3xl" data-reveal>
+            <p class="section-label mb-6">02 — Message</p>
+            <h3 class="font-display text-2xl font-bold mb-6">Send an Inquiry</h3>
+            
+            <form id="contact-query-form" class="space-y-6">
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="contact-name" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Your Name</label>
+                  <input type="text" id="contact-name" required placeholder="Vipul Meshram" class="w-full bg-surface border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none transition-colors duration-300">
+                </div>
+                <div>
+                  <label for="contact-email" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Email Address</label>
+                  <input type="email" id="contact-email" required placeholder="vipul@example.com" class="w-full bg-surface border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none transition-colors duration-300">
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-subject" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Subject</label>
+                <input type="text" id="contact-subject" required placeholder="RAKSHAK Demo / Custom UAV Collaboration" class="w-full bg-surface border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none transition-colors duration-300">
+              </div>
+
+              <div>
+                <label for="contact-message" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Inquiry / Message</label>
+                <textarea id="contact-message" rows="5" required placeholder="Describe your mission requirements, payload parameters, or scheduling options..." class="w-full bg-surface border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none resize-none transition-colors duration-300"></textarea>
+              </div>
+
+              <button type="submit" class="btn-secondary w-full py-4">Transmit Message</button>
+            </form>
+            <div id="contact-success-message" class="hidden mt-6 text-center text-sm font-mono text-accent">
+              Message transmitted successfully! Our engineering team will review your parameters and follow up.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
   <div id="site-footer"></div>
+
   <script type="module" src="js/main.js"></script>
+  <script>
+    document.getElementById('contact-query-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('contact-query-form').style.display = 'none';
+      document.getElementById('contact-success-message').classList.remove('hidden');
+    });
+  </script>
 </body>
 </html>

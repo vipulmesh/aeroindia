@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aeroindia events — UDAAN 2026 drone workshop, live demonstrations, and past milestones.">
+  <meta name="description" content="Aeroindia Events — UDAAN 2026 drone workshop curriculum, schedule, registration details, and past milestones.">
   <title>Events — Aeroindia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,18 +12,272 @@
   <link rel="apple-touch-icon" href="assets/aeroindia-logo.png">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="min-h-screen bg-bg text-foreground antialiased overflow-x-hidden">
   <div class="grain-overlay" aria-hidden="true"></div>
   <div class="scanline" aria-hidden="true"></div>
 
   <div id="site-nav"></div>
 
-  <main>
-    <!-- STUB: Phase 5 will populate full page content -->
-    <p style="padding:8rem 2rem;color:#e0863d;font-family:monospace;">events.html — Phase 5 content pending</p>
+  <main class="relative z-10 pt-28 md:pt-32">
+    <!-- WORKSHOPS SECTION -->
+    <section class="relative py-24 lg:py-32 border-t border-border" aria-label="Upcoming workshops">
+      <div class="absolute inset-0 grid-overlay opacity-10" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-[1400px] px-6 lg:px-10">
+
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">01 — Workshops</p>
+          <h2 class="section-heading">Our <span class="text-accent">Programs</span></h2>
+          <p class="mt-4 max-w-xl text-muted-text leading-relaxed">Hands-on drone engineering workshops delivered to students and engineering aspirants across India.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8" data-stagger>
+
+          <!-- CARD: UDAAN 2026 -->
+          <article class="workshop-card group relative flex flex-col border border-border bg-surface/60 rounded-2xl overflow-hidden transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_32px_rgba(224,134,61,0.15)]" data-stagger-item>
+            <div class="hud-corner hud-corner--tl"></div>
+            <div class="hud-corner hud-corner--br"></div>
+
+            <!-- Image Gallery: 3 slots -->
+            <div class="grid grid-cols-3 gap-px bg-border/30 h-72">
+              <div class="workshop-img-slot relative overflow-hidden bg-bg/80 flex items-center justify-center group/img">
+                <img src="" alt="UDAAN 2026 — Workshop photo 1" class="w-full h-full object-cover opacity-0 transition-opacity duration-300" onerror="this.style.display='none'" data-placeholder>
+                <div class="placeholder-label absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(224,134,61,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span class="font-mono text-[9px] text-muted-text/50 tracking-label uppercase">Photo 1</span>
+                </div>
+                <div class="absolute inset-0 bg-accent/5 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="workshop-img-slot relative overflow-hidden bg-bg/80 flex items-center justify-center group/img border-x border-border/20">
+                <img src="" alt="UDAAN 2026 — Workshop photo 2" class="w-full h-full object-cover opacity-0 transition-opacity duration-300" onerror="this.style.display='none'" data-placeholder>
+                <div class="placeholder-label absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(224,134,61,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span class="font-mono text-[9px] text-muted-text/50 tracking-label uppercase">Photo 2</span>
+                </div>
+                <div class="absolute inset-0 bg-accent/5 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="workshop-img-slot relative overflow-hidden bg-bg/80 flex items-center justify-center group/img">
+                <img src="" alt="UDAAN 2026 — Workshop photo 3" class="w-full h-full object-cover opacity-0 transition-opacity duration-300" onerror="this.style.display='none'" data-placeholder>
+                <div class="placeholder-label absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(224,134,61,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span class="font-mono text-[9px] text-muted-text/50 tracking-label uppercase">Photo 3</span>
+                </div>
+                <div class="absolute inset-0 bg-accent/5 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="flex flex-col flex-1 p-8">
+              <div class="mb-4">
+                <span class="font-mono text-[10px] text-accent tracking-label uppercase">National Workshop</span>
+                <h3 class="font-display text-2xl font-bold mt-1">UDAAN 2026</h3>
+              </div>
+
+              <p class="text-sm text-muted-text leading-relaxed">
+                Aeroindia's flagship four-day intensive drone engineering workshop. Hosted in partnership with RSCOE, participants gained hands-on experience building and flying autonomous UAV platforms — from frame fabrication to live field test operations.
+              </p>
+
+              <div class="mt-6 grid grid-cols-2 gap-3">
+                <div class="card-tech p-3 rounded-xl">
+                  <p class="font-mono text-xs text-accent">4 Days</p>
+                  <p class="text-xs text-muted-text mt-0.5">Hands-on Lab Sessions</p>
+                </div>
+                <div class="card-tech p-3 rounded-xl">
+                  <p class="font-mono text-xs text-accent">20+ Hours</p>
+                  <p class="text-xs text-muted-text mt-0.5">Practical Flight Time</p>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-6 border-t border-border/40">
+                <span class="font-mono text-xs text-muted-text">RSCOE Campus, Lab 3</span>
+              </div>
+            </div>
+            <span class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></span>
+          </article>
+
+          <!-- CARD: SIMPLESPHERE WORKSHOP -->
+          <article class="workshop-card group relative flex flex-col border border-border bg-surface/60 rounded-2xl overflow-hidden transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_32px_rgba(224,134,61,0.15)]" data-stagger-item>
+            <div class="hud-corner hud-corner--tl"></div>
+            <div class="hud-corner hud-corner--br"></div>
+
+            <!-- Image Gallery: 3 slots -->
+            <div class="grid grid-cols-3 gap-px bg-border/30 h-72">
+              <div class="workshop-img-slot relative overflow-hidden bg-bg/80 flex items-center justify-center group/img">
+                <img src="" alt="SimpleSphere — Workshop photo 1" class="w-full h-full object-cover opacity-0 transition-opacity duration-300" onerror="this.style.display='none'" data-placeholder>
+                <div class="placeholder-label absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(224,134,61,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span class="font-mono text-[9px] text-muted-text/50 tracking-label uppercase">Photo 1</span>
+                </div>
+                <div class="absolute inset-0 bg-accent/5 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="workshop-img-slot relative overflow-hidden bg-bg/80 flex items-center justify-center group/img border-x border-border/20">
+                <img src="" alt="SimpleSphere — Workshop photo 2" class="w-full h-full object-cover opacity-0 transition-opacity duration-300" onerror="this.style.display='none'" data-placeholder>
+                <div class="placeholder-label absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(224,134,61,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span class="font-mono text-[9px] text-muted-text/50 tracking-label uppercase">Photo 2</span>
+                </div>
+                <div class="absolute inset-0 bg-accent/5 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="workshop-img-slot relative overflow-hidden bg-bg/80 flex items-center justify-center group/img">
+                <img src="" alt="SimpleSphere — Workshop photo 3" class="w-full h-full object-cover opacity-0 transition-opacity duration-300" onerror="this.style.display='none'" data-placeholder>
+                <div class="placeholder-label absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(224,134,61,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  <span class="font-mono text-[9px] text-muted-text/50 tracking-label uppercase">Photo 3</span>
+                </div>
+                <div class="absolute inset-0 bg-accent/5 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="flex flex-col flex-1 p-8">
+              <div class="mb-4">
+                <span class="font-mono text-[10px] text-accent tracking-label uppercase">Intensive Workshop</span>
+                <h3 class="font-display text-2xl font-bold mt-1">SimpleSphere</h3>
+              </div>
+
+              <p class="text-sm text-muted-text leading-relaxed">
+                SimpleSphere bridged the gap between classroom theory and real-world aerospace application. Participants explored embedded systems, sensor integration, and basic flight mechanics through guided build sessions.
+              </p>
+
+              <div class="mt-6 grid grid-cols-2 gap-3">
+                <div class="card-tech p-3 rounded-xl">
+                  <p class="font-mono text-xs text-accent">2 Days</p>
+                  <p class="text-xs text-muted-text mt-0.5">Guided Build Sessions</p>
+                </div>
+                <div class="card-tech p-3 rounded-xl">
+                  <p class="font-mono text-xs text-accent">Beginner</p>
+                  <p class="text-xs text-muted-text mt-0.5">No Prior Experience Needed</p>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-6 border-t border-border/40">
+                <span class="font-mono text-xs text-muted-text">RSCOE Campus</span>
+              </div>
+            </div>
+            <span class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section id="registration" class="relative py-24 lg:py-32 border-t border-border">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          
+          <div class="lg:col-span-5" data-reveal>
+            <p class="section-label mb-4">02 — Registration</p>
+            <h2 class="section-heading">Secure Your Slot</h2>
+            <p class="text-muted-text mt-6">
+              Seats are strictly limited to 40 participants to ensure high quality face-to-face mentorship. Registration includes component kits, lab materials, and certification.
+            </p>
+            <div class="mt-8 space-y-4 font-mono text-xs text-muted-text">
+              <div class="flex justify-between border-b border-border/30 pb-2">
+                <span>Fee per candidate</span>
+                <span class="text-foreground">₹2,499</span>
+              </div>
+              <div class="flex justify-between border-b border-border/30 pb-2">
+                <span>Location</span>
+                <span class="text-foreground">RSCOE Campus, Lab 3</span>
+              </div>
+              <div class="flex justify-between pb-2">
+                <span>Registration Deadline</span>
+                <span class="text-accent">July 5, 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-surface/50 border border-border p-8 rounded-3xl" data-reveal>
+            <form id="events-register-form" class="space-y-6">
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="reg-name" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Full Name</label>
+                  <input type="text" id="reg-name" required placeholder="Vipul Sharma" class="w-full bg-bg border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none transition-colors duration-300">
+                </div>
+                <div>
+                  <label for="reg-email" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Email Address</label>
+                  <input type="email" id="reg-email" required placeholder="vipul@example.com" class="w-full bg-bg border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none transition-colors duration-300">
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="reg-phone" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Phone Number</label>
+                  <input type="tel" id="reg-phone" required placeholder="+91 98765 43210" class="w-full bg-bg border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none transition-colors duration-300">
+                </div>
+                <div>
+                  <label for="reg-college" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Institution/Company</label>
+                  <input type="text" id="reg-college" required placeholder="RSCOE, Pune" class="w-full bg-bg border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none transition-colors duration-300">
+                </div>
+              </div>
+
+              <div>
+                <label for="reg-experience" class="block font-mono text-[10px] uppercase tracking-label text-muted-text mb-2">Prior UAV/Coding Experience</label>
+                <select id="reg-experience" class="w-full bg-bg border border-border px-4 py-3 text-sm focus:border-accent focus:outline-none appearance-none transition-colors duration-300 text-muted-text">
+                  <option value="none">None (Beginner)</option>
+                  <option value="basic">Basic understanding</option>
+                  <option value="intermediate">Built RC models or coded microcontrollers</option>
+                  <option value="advanced">Advanced (Worked on UAV research/projects)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-secondary w-full py-4">Submit Registration</button>
+            </form>
+            <div id="reg-success-message" class="hidden mt-6 text-center text-sm font-mono text-accent">
+              Registration request received! Our coordinator will contact you shortly with payment details.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAST MILESTONES -->
+    <section class="relative py-24 lg:py-32 bg-surface border-t border-border">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">03 — History</p>
+          <h2 class="section-heading">Past Exhibitions &amp; Milestones</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-px bg-border" data-stagger>
+          
+          <article class="bg-bg p-8 lg:p-12 relative group" data-stagger-item>
+            <div class="hud-corner hud-corner--tl"></div>
+            <div class="hud-corner hud-corner--br"></div>
+            <span class="font-mono text-[10px] text-accent tracking-label">January 2025</span>
+            <h3 class="mt-4 font-display text-2xl font-bold">Yuvahan 2025 Innovation Award</h3>
+            <p class="mt-4 text-sm text-muted-text leading-relaxed">
+              Our flagship window-cleaning drone, NIRMAL, was awarded the prestigious Emerging Innovation Award at Yuvahan 2025, recognizing our engineering contribution to urban safety automation.
+            </p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+          <article class="bg-bg p-8 lg:p-12 relative group" data-stagger-item>
+            <div class="hud-corner hud-corner--tl"></div>
+            <div class="hud-corner hud-corner--br"></div>
+            <span class="font-mono text-[10px] text-accent tracking-label">February 2025</span>
+            <h3 class="mt-4 font-display text-2xl font-bold">CII NexGen Mobility Show</h3>
+            <p class="mt-4 text-sm text-muted-text leading-relaxed">
+              Aeroindia was invited to exhibit RAKSHAK and NIRMAL prototypes at the Confederation of Indian Industry (CII) NexGen Mobility Show, showcasing our drone systems to national industry leaders.
+            </p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
   </main>
 
   <div id="site-footer"></div>
+
   <script type="module" src="js/main.js"></script>
+  <script>
+    document.getElementById('events-register-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('events-register-form').style.display = 'none';
+      document.getElementById('reg-success-message').classList.remove('hidden');
+    });
+  </script>
 </body>
 </html>

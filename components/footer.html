@@ -1,5 +1,67 @@
-<!-- components/footer.html
-     Shared site footer with links, social, copyright.
-     Injected into #site-footer on every page via js/main.js.
-     Phase 3 will populate this file fully.
--->
+<footer class="relative border-t border-border bg-bg" role="contentinfo">
+  <div class="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+
+      <!-- Brand column -->
+      <div class="lg:col-span-2">
+        <a href="index.html" class="inline-block mb-6" aria-label="Aeroindia — home">
+          <div class="logo-plate logo-plate--footer">
+            <img src="assets/aeroindia-logo.png" alt="Aeroindia" class="logo-img logo-footer" width="168" height="72" decoding="async">
+          </div>
+        </a>
+        <p class="text-sm text-muted-text leading-relaxed max-w-xs">
+          Engineering India's aerial future — UAV innovation for agriculture, healthcare, disaster response, and industry.
+        </p>
+        <p class="mt-4 font-mono text-[10px] uppercase tracking-label text-accent">
+          नभः स्पृशतु तेजसा
+        </p>
+      </div>
+
+      <!-- Navigation column -->
+      <div>
+        <p class="section-label mb-6">Navigation</p>
+        <ul class="space-y-3" role="list">
+          <li><a href="index.html"    class="nav-link text-xs">Home</a></li>
+          <li><a href="about.html"    class="nav-link text-xs">About</a></li>
+          <li><a href="services.html" class="nav-link text-xs">Services</a></li>
+          <li><a href="projects.html" class="nav-link text-xs">Projects</a></li>
+          <li><a href="events.html"   class="nav-link text-xs">Events</a></li>
+          <li><a href="contact.html"  class="nav-link text-xs">Contact</a></li>
+          <li><a href="faq.html"      class="nav-link text-xs">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact column -->
+      <div>
+        <p class="section-label mb-6">Contact</p>
+        <ul class="space-y-3" role="list">
+          <li>
+            <a href="mailto:aeroindia1402@gmail.com" class="nav-link text-xs hover:underline">
+              aeroindia1402@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="btn-primary text-xs mt-4 inline-flex">Request Demo</a>
+          </li>
+        </ul>
+        <div class="mt-8">
+          <p class="section-label mb-3">Funded by</p>
+          <p class="font-mono text-[10px] text-muted-text">RSCOE — ₹50,000</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer bottom bar -->
+    <div class="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="flex flex-wrap items-center gap-6 font-mono text-[10px] uppercase tracking-label text-muted-text">
+        <span>© <span id="footer-year">2026</span> Aeroindia.</span>
+        <a href="privacy.html" class="hover:text-accent transition-colors duration-300">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-accent transition-colors duration-300">Terms of Service</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>

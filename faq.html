@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aeroindia FAQ — answers to common questions about agricultural spraying drones, window cleaning UAVs, and workshops.">
+  <title>FAQ — Aeroindia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/aeroindia-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/aeroindia-logo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="min-h-screen bg-bg text-foreground antialiased overflow-x-hidden">
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div id="site-nav"></div>
+
+  <main class="relative z-10 pt-28 md:pt-32">
+    <!-- PAGE HERO -->
+    <section class="relative min-h-[60vh] flex flex-col justify-end overflow-hidden bg-cinematic-navy pt-32 pb-20 lg:pb-28" aria-label="FAQ hero">
+      <div class="absolute inset-0 grid-overlay opacity-20" aria-hidden="true"></div>
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" aria-hidden="true">
+        <path class="trajectory-path" d="M-50,180 Q400,60 900,160 T1900,120" fill="none" stroke="#E0863D" stroke-width="1"/>
+        <path class="trajectory-path" d="M-50,320 Q300,220 800,300 T1700,260" fill="none" stroke="#E77A22" stroke-width="0.6" opacity="0.7"/>
+      </svg>
+
+      <div class="logo-watermark-zone absolute right-6 top-24 hidden md:block" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark">
+          <img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68">
+        </div>
+      </div>
+
+      <div class="relative mx-auto w-full max-w-[1400px] px-6 lg:px-10">
+        <div class="page-hero-logo-wrap">
+          <div class="logo-plate logo-plate--hero">
+            <img src="assets/aeroindia-logo.png" alt="Aeroindia" class="logo-img logo-hero" width="200" height="76" decoding="async">
+          </div>
+        </div>
+        <p class="section-label mb-4" data-reveal>Common Questions</p>
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight leading-[0.92] max-w-4xl" data-reveal>
+          FREQUENTLY ASKED<br>
+          <span class="text-accent">QUESTIONS</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-muted-text leading-relaxed" data-reveal>
+          Answers regarding drone configurations, startup operations, agricultural capabilities, and candidate registration.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDIONS -->
+    <section class="relative py-24 lg:py-32 border-t border-border bg-surface">
+      <div class="mx-auto max-w-[900px] px-6 lg:px-10">
+        
+        <div class="space-y-4" data-reveal>
+          
+          <!-- Q1 -->
+          <details class="faq-details group">
+            <summary class="faq-summary">
+              Who funds and supports Aeroindia?
+              <span class="faq-icon-cross"></span>
+            </summary>
+            <div class="faq-content">
+              Aeroindia is incubated and supported by the RSCOE Innovation & Incubation Foundation. The startup was awarded ₹50,000 in early-stage seed funding to develop and field-demonstrate our RAKSHAK drone prototypes.
+            </div>
+          </details>
+
+          <!-- Q2 -->
+          <details class="faq-details group">
+            <summary class="faq-summary">
+              What are the operational parameters of the RAKSHAK drone?
+              <span class="faq-icon-cross"></span>
+            </summary>
+            <div class="faq-content">
+              RAKSHAK is an autonomous agricultural spraying drone. It features a 20-liter payload tank, RTK centimeter-level GPS navigation, variable nozzle spray patterns, and an acoustic/light deterrent system to safely ward off birds and wild animals from agricultural fields.
+            </div>
+          </details>
+
+          <!-- Q3 -->
+          <details class="faq-details group">
+            <summary class="faq-summary">
+              Is the NIRMAL facade cleaning system fully autonomous?
+              <span class="faq-icon-cross"></span>
+            </summary>
+            <div class="faq-content">
+              NIRMAL is currently an award-winning industrial prototype. It utilizes custom laser-distance sensors and altitude hold firmware to hover safely near vertical glass surfaces. While it supports pre-programmed vertical cleaning trajectories, it is monitored by a remote safety pilot during high-altitude runs.
+            </div>
+          </details>
+
+          <!-- Q4 -->
+          <details class="faq-details group">
+            <summary class="faq-summary">
+              Who can participate in the UDAAN 2026 workshop?
+              <span class="faq-icon-cross"></span>
+            </summary>
+            <div class="faq-content">
+              UDAAN 2026 is designed for engineering undergraduates, diploma students, researchers, and UAV hobbyists. No prior coding or assembly experience is required. The curriculum begins with structural mechanics and proceeds to flight telemetry scripting.
+            </div>
+          </details>
+
+          <!-- Q5 -->
+          <details class="faq-details group">
+            <summary class="faq-summary">
+              How does Aeroindia manage airspace clearances in India?
+              <span class="faq-icon-cross"></span>
+            </summary>
+            <div class="faq-content">
+              All flight operations strictly comply with DGCA Drone Rules, 2021. Prior to flying, our pilots inspect airspace zones (Green, Yellow, Red) on the government DigitalSky portal and submit automated flight plans. We do not operate drones in Yellow or Red zones without corresponding defense or civilian command clearances.
+            </div>
+          </details>
+
+          <!-- Q6 -->
+          <details class="faq-details group">
+            <summary class="faq-summary">
+              How can we coordinate for custom UAV engineering?
+              <span class="faq-icon-cross"></span>
+            </summary>
+            <div class="faq-content">
+              Institutions or industries requiring bespoke flight controllers, mechanical mounts, or specific sensor payloads can contact our engineering team directly via the contact form or email. We follow a detailed Discovery, design, field testing, and certification handover cycle.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

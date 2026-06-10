@@ -1,0 +1,13 @@
+{
+  "name": "aeroindia",
+  "version": "1.0.0",
+  "description": "Aeroindia corporate website",
+  "main": "js/main.js",
+  "scripts": {
+    "build": "tailwindcss -i css/src.css -o css/main.css --minify",
+    "dev": "tailwindcss -i css/src.css -o css/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

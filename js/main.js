@@ -13,13 +13,11 @@ import { initAnimations }           from './animations.js';
 import { qs }                       from './utilities.js';
 
 // ─── Footer HTML template ────────────────────────────────────────────────────
+// ─── Footer HTML template fallback (for file:// protocol compatibility) ──────
 const FOOTER_HTML = /* html */`
 <footer class="relative border-t border-border bg-bg" role="contentinfo">
   <div class="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
-
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
-
-      <!-- Brand column -->
       <div class="lg:col-span-2">
         <a href="index.html" class="inline-block mb-6" aria-label="Aeroindia — home">
           <div class="logo-plate logo-plate--footer">
@@ -29,12 +27,8 @@ const FOOTER_HTML = /* html */`
         <p class="text-sm text-muted-text leading-relaxed max-w-xs">
           Engineering India's aerial future — UAV innovation for agriculture, healthcare, disaster response, and industry.
         </p>
-        <p class="mt-4 font-mono text-[10px] uppercase tracking-label text-accent">
-          नभः स्पृशतु तेजसा
-        </p>
+        <p class="mt-4 font-mono text-[10px] uppercase tracking-label text-accent">नभः स्पृशतु तेजसा</p>
       </div>
-
-      <!-- Navigation column -->
       <div>
         <p class="section-label mb-6">Navigation</p>
         <ul class="space-y-3" role="list">
@@ -44,40 +38,28 @@ const FOOTER_HTML = /* html */`
           <li><a href="projects.html" class="nav-link text-xs">Projects</a></li>
           <li><a href="events.html"   class="nav-link text-xs">Events</a></li>
           <li><a href="contact.html"  class="nav-link text-xs">Contact</a></li>
+          <li><a href="faq.html"      class="nav-link text-xs">FAQ</a></li>
         </ul>
       </div>
-
-      <!-- Contact column -->
       <div>
         <p class="section-label mb-6">Contact</p>
         <ul class="space-y-3" role="list">
-          <li>
-            <a href="mailto:aeroindia1402@gmail.com" class="nav-link text-xs hover:underline">
-              aeroindia1402@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="contact.html" class="btn-primary text-xs mt-4 inline-flex">Request Demo</a>
-          </li>
+          <li><a href="mailto:aeroindia1402@gmail.com" class="nav-link text-xs hover:underline">aeroindia1402@gmail.com</a></li>
+          <li><a href="contact.html" class="btn-primary text-xs mt-4 inline-flex">Request Demo</a></li>
         </ul>
         <div class="mt-8">
           <p class="section-label mb-3">Funded by</p>
           <p class="font-mono text-[10px] text-muted-text">RSCOE — ₹50,000</p>
         </div>
       </div>
-
     </div>
-
-    <!-- Footer bottom bar -->
     <div class="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-      <p class="font-mono text-[10px] uppercase tracking-label text-muted-text">
-        © ${new Date().getFullYear()} Aeroindia. Make in India.
-      </p>
-      <p class="font-mono text-[10px] uppercase tracking-label text-muted-text/50">
-        Founded 2023 · Nagpur, Maharashtra
-      </p>
-    </div>
-
+      <div class="flex flex-wrap items-center gap-6 font-mono text-[10px] uppercase tracking-label text-muted-text">
+        <span>© <span id="footer-year">2026</span> Aeroindia.</span>
+        <a href="privacy.html" class="hover:text-accent transition-colors duration-300">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-accent transition-colors duration-300">Terms of Service</a>
+      </div>
+          </div>
   </div>
 </footer>
 `;
@@ -93,17 +75,47 @@ const LOADER_HTML = /* html */`
 `;
 
 // ─── Inject shared components ─────────────────────────────────────────────────
-function injectComponents() {
+async function injectComponents() {
   const navSlot    = qs('#site-nav');
   const footerSlot = qs('#site-footer');
 
-  if (navSlot)    navSlot.innerHTML    = NAV_HTML;
-  if (footerSlot) footerSlot.innerHTML = FOOTER_HTML;
+  // Inject Navigation
+  if (navSlot) {
+    try {
+      const res = await fetch('components/header.html');
+      if (res.ok) {
+        navSlot.innerHTML = await res.text();
+      } else {
+        navSlot.innerHTML = NAV_HTML;
+      }
+    } catch (e) {
+      navSlot.innerHTML = NAV_HTML;
+    }
+  }
+
+  // Inject Footer
+  if (footerSlot) {
+    try {
+      const res = await fetch('components/footer.html');
+      if (res.ok) {
+        footerSlot.innerHTML = await res.text();
+      } else {
+        footerSlot.innerHTML = FOOTER_HTML;
+      }
+    } catch (e) {
+      footerSlot.innerHTML = FOOTER_HTML;
+    }
+
+    // Dynamic Copyright Year
+    const yearEl = qs('#footer-year', footerSlot);
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear().toString();
+    }
+  }
 }
 
 // ─── Loader ───────────────────────────────────────────────────────────────────
 function initLoader() {
-  // Only show loader on first visit per session
   const hasLoaded = sessionStorage.getItem('ai-loaded');
 
   if (!hasLoaded) {
@@ -120,24 +132,22 @@ function initLoader() {
         sessionStorage.setItem('ai-loaded', '1');
 
         loader.addEventListener('transitionend', () => loader.remove(), { once: true });
-      }, 900); // minimum visible time
+      }, 900);
     });
   }
 }
 
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
-function init() {
+async function init() {
   initLoader();
-  injectComponents();
+  await injectComponents();
 
-  // Wait one tick for injected DOM to settle before initialising JS behaviour
   requestAnimationFrame(() => {
     initNavigation();
     initAnimations();
   });
 }
 
-// Run when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', init);
 } else {
