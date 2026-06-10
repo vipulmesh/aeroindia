@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aeroindia — Engineering India's aerial future. Premium UAV innovation for agriculture, healthcare, disaster response, and industrial applications. Made in India.">
+  <title>Aeroindia — Engineering India's Aerial Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/aeroindia-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/aeroindia-logo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="home-hero relative min-h-screen flex flex-col justify-end overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0">
+        <video
+          id="hero-video"
+          class="hero-video h-full w-full object-cover"
+          src="assets/bg_video.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80"
+          aria-hidden="true">
+        </video>
+        <div class="hero-video-overlay absolute inset-0"></div>
+        <div class="absolute inset-0 grid-overlay opacity-40" data-hero-grid></div>
+      </div>
+
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-25" aria-hidden="true">
+        <path class="trajectory-path" d="M-50,300 Q200,100 500,280 T1100,220 T1800,180" fill="none" stroke="#E0863D" stroke-width="1"/>
+        <path class="trajectory-path" d="M-50,450 Q300,350 700,420 T1400,380" fill="none" stroke="#E77A22" stroke-width="0.6" opacity="0.7"/>
+        <path class="trajectory-path" d="M200,600 Q600,400 1000,500" fill="none" stroke="#FEFEFE" stroke-width="0.3" opacity="0.2"/>
+      </svg>
+
+      <div class="absolute top-1/4 right-6 hidden lg:block opacity-30" aria-hidden="true">
+        <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+          <circle cx="100" cy="100" r="80" stroke="#E0863D" stroke-width="0.5" opacity="0.5"/>
+          <circle cx="100" cy="100" r="50" stroke="#E77A22" stroke-width="0.5" opacity="0.5"/>
+          <line x1="100" y1="20" x2="100" y2="180" stroke="rgba(254,254,254,0.15)" stroke-width="0.5"/>
+          <line x1="20" y1="100" x2="180" y2="100" stroke="rgba(254,254,254,0.15)" stroke-width="0.5"/>
+        </svg>
+      </div>
+
+      <div class="relative z-10 mx-auto w-full max-w-[1400px] px-6 pb-16 pt-20 sm:pb-20 lg:px-10 lg:pb-24">
+        <div class="page-hero-logo-wrap home-hero-logo" data-hero-logo>
+          <div class="logo-plate logo-plate--hero">
+            <img src="assets/aeroindia-logo.png" alt="Aeroindia" class="logo-img logo-hero" width="200" height="76" decoding="async">
+          </div>
+        </div>
+        <h1 class="font-display text-4xl font-bold tracking-tight leading-[0.92] sm:text-6xl md:text-7xl lg:text-8xl max-w-5xl" data-hero-title>
+          ENGINEERING<br>
+          <span class="text-accent">INDIA'S</span><br>
+          AERIAL FUTURE
+        </h1>
+        <p class="mt-5 sm:mt-6 max-w-xl text-base sm:text-lg text-muted-text leading-relaxed" data-hero-sub>
+          नभः स्पृशतु तेजसा — Let us touch the sky with brilliance. Building innovative drone technologies for agriculture, healthcare, and national resilience.
+        </p>
+        <div class="mt-6 sm:mt-8 flex flex-wrap items-center gap-6 sm:gap-8" data-hero-cta>
+          <a href="projects.html" class="btn-primary">Explore Projects</a>
+          <a href="contact.html" class="btn-secondary">Request Demo</a>
+        </div>
+
+        // removed as advised by sai
+        <!-- <div class="mt-8 sm:mt-10 flex items-center gap-6 font-mono text-[10px] uppercase tracking-label text-muted-text">
+          <span>RAKSHAK</span>
+          <span class="h-px w-8 bg-border"></span>
+          <span>NIRMAL</span>
+          <span class="h-px w-8 bg-border"></span>
+          <span>UDAAN 2026</span>
+        </div> -->
+      </div>
+
+      <a href="#mission" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-text" data-scroll-indicator aria-label="Scroll to mission">
+        <span class="font-mono text-[10px] uppercase tracking-label">Scroll</span>
+        <span class="h-12 w-px bg-gradient-to-b from-accent/80 to-transparent"></span>
+      </a>
+    </section>
+
+    <!-- Mission -->
+    <section id="mission" class="relative py-24 lg:py-32 border-t border-border overflow-hidden bg-cinematic-navy">
+      <div class="logo-watermark-zone absolute right-4 top-8 hidden md:block" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark"><img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68"></div>
+      </div>
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          <div class="lg:col-span-5" data-reveal>
+            <p class="section-label mb-4">01 — Mission</p>
+            <h2 class="section-heading text-balance">
+              India's future in drone innovation starts here.
+            </h2>
+          </div>
+          <div class="lg:col-span-7 space-y-6" data-reveal>
+            <p class="text-lg text-muted-text leading-relaxed">
+              Aeroindia engineers sustainable, mission-ready UAV systems made in India — for farmers protecting crops, medics delivering supplies, responders surveying disaster zones, and industries monitoring critical infrastructure.
+            </p>
+            <p class="text-muted-text leading-relaxed">
+              We combine aerospace precision with innovation-first R&D. Every flight path we design advances autonomous navigation, payload engineering, and the bold ambition to put Indian drone technology on the global stage.
+            </p>
+            <a href="about.html" class="btn-primary mt-4 inline-flex">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="relative py-24 lg:py-32 bg-surface border-t border-border" aria-labelledby="services-heading">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16" data-reveal>
+          <div>
+            <p class="section-label mb-4">02 — Capabilities</p>
+            <h2 id="services-heading" class="section-heading">Services</h2>
+          </div>
+          <a href="services.html" class="btn-primary shrink-0">All Services</a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border" data-stagger>
+          <article class="card-tech bg-bg relative group" data-stagger-item>
+            <span class="font-mono text-[10px] text-accent tracking-label">01</span>
+            <h3 class="mt-4 font-display text-xl font-semibold">Agricultural Spraying</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">Precision crop protection and smart farming UAV solutions powered by RAKSHAK.</p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+          <article class="card-tech bg-bg relative group" data-stagger-item>
+            <span class="font-mono text-[10px] text-accent tracking-label">02</span>
+            <h3 class="mt-4 font-display text-xl font-semibold">Medical Delivery</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">Aerial logistics for healthcare — reaching communities when roads cannot.</p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+          <article class="card-tech bg-bg relative group" data-stagger-item>
+            <span class="font-mono text-[10px] text-accent tracking-label">03</span>
+            <h3 class="mt-4 font-display text-xl font-semibold">Disaster Response</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">Autonomous survey and supply drones for emergency operations.</p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+          <article class="card-tech bg-bg relative group" data-stagger-item>
+            <span class="font-mono text-[10px] text-accent tracking-label">04</span>
+            <h3 class="mt-4 font-display text-xl font-semibold">Industrial Inspection</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">Infrastructure monitoring and high-rise facade systems via NIRMAL.</p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+          <article class="card-tech bg-bg relative group" data-stagger-item>
+            <span class="font-mono text-[10px] text-accent tracking-label">05</span>
+            <h3 class="mt-4 font-display text-xl font-semibold">Custom Engineering</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">Bespoke UAV platforms from concept to flight-ready prototype.</p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+          <article class="card-tech bg-bg relative group" data-stagger-item>
+            <span class="font-mono text-[10px] text-accent tracking-label">06</span>
+            <h3 class="mt-4 font-display text-xl font-semibold">Training & Workshops</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">UDAAN 2026 and industry partnerships building India's drone workforce.</p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="relative py-24 lg:py-32 border-t border-border overflow-hidden">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">03 — Flagship Systems</p>
+          <h2 class="section-heading">Featured Projects</h2>
+        </div>
+
+        <div class="space-y-px bg-border">
+          <article class="group relative grid lg:grid-cols-2 bg-bg overflow-hidden" data-reveal>
+            <div class="relative aspect-[16/10] lg:aspect-auto lg:min-h-[480px] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1200&q=80" alt="RAKSHAK agricultural spraying drone in flight over farmland" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent lg:bg-gradient-to-r"></div>
+              <div class="hud-corner hud-corner--tl"></div>
+              <div class="hud-corner hud-corner--br"></div>
+            </div>
+            <div class="flex flex-col justify-center p-8 lg:p-16 border-l border-border">
+              <span class="font-mono text-xs text-accent tracking-label">AGRICULTURE UAV</span>
+              <h3 class="mt-4 font-display text-4xl lg:text-5xl font-bold tracking-tight">RAKSHAK</h3>
+              <p class="mt-4 text-muted-text leading-relaxed max-w-md">
+                Autonomous agricultural spraying drone for crop protection, automation, and animal deterrence. Funded by RSCOE Innovation & Incubation Foundation.
+              </p>
+              <ul class="mt-6 space-y-2 font-mono text-xs text-muted-text">
+                <li>₹50,000 startup funding</li>
+                <li>RTK precision navigation</li>
+                <li>20L payload capacity</li>
+              </ul>
+              <a href="projects.html#rakshak" class="btn-primary mt-8">View Project</a>
+            </div>
+          </article>
+
+          <article class="group relative grid lg:grid-cols-2 bg-bg overflow-hidden" data-reveal>
+            <div class="relative aspect-[16/10] lg:aspect-auto lg:min-h-[480px] overflow-hidden lg:order-2">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" alt="NIRMAL window-cleaning drone near high-rise building" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent lg:bg-gradient-to-l"></div>
+              <div class="hud-corner hud-corner--tr"></div>
+              <div class="hud-corner hud-corner--bl"></div>
+            </div>
+            <div class="flex flex-col justify-center p-8 lg:p-16 border-r border-border lg:order-1">
+              <span class="font-mono text-xs text-accent-secondary tracking-label">INFRASTRUCTURE UAV</span>
+              <h3 class="mt-4 font-display text-4xl lg:text-5xl font-bold tracking-tight">NIRMAL</h3>
+              <p class="mt-4 text-muted-text leading-relaxed max-w-md">
+                High-rise window-cleaning drone revolutionizing facade maintenance. Emerging Innovation Award winner at Yuvahan 2025.
+              </p>
+              <ul class="mt-6 space-y-2 font-mono text-xs text-muted-text">
+                <li>CII NexGen Mobility Show</li>
+                <li>Urban-safe flight envelope</li>
+                <li>Modular cleaning payload</li>
+              </ul>
+              <a href="projects.html#nirmal" class="btn-primary mt-8">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovation Timeline -->
+    <section class="relative py-24 lg:py-32 bg-muted border-t border-border">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">04 — Trajectory</p>
+          <h2 class="section-heading">Innovation Timeline</h2>
+        </div>
+
+        <div class="relative" data-stagger>
+          <div class="absolute left-0 top-0 bottom-0 w-px bg-border ml-[27px] lg:ml-[39px]" aria-hidden="true"></div>
+          <div class="space-y-0">
+            <div class="relative flex gap-8 py-8 border-b border-border/50" data-stagger-item>
+              <span class="font-mono text-sm text-accent w-14 shrink-0 lg:w-20">2023</span>
+              <p class="text-foreground">Aeroindia founded — vision for Make in India drone innovation</p>
+            </div>
+            <div class="relative flex gap-8 py-8 border-b border-border/50" data-stagger-item>
+              <span class="font-mono text-sm text-accent w-14 shrink-0 lg:w-20">2024</span>
+              <p class="text-muted-text">RAKSHAK development · ₹50,000 RSCOE funding secured</p>
+            </div>
+            <div class="relative flex gap-8 py-8 border-b border-border/50" data-stagger-item>
+              <span class="font-mono text-sm text-accent w-14 shrink-0 lg:w-20">2025</span>
+              <p class="text-muted-text">NIRMAL wins Emerging Innovation Award · CII NexGen Mobility Show</p>
+            </div>
+            <div class="relative flex gap-8 py-8" data-stagger-item>
+              <span class="font-mono text-sm text-accent-secondary w-14 shrink-0 lg:w-20">2026</span>
+              <p class="text-foreground">UDAAN 2026 Drone Workshop — training the next generation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drone Showcase  forbidden as advised by sai-
+
+    <section class="relative py-24 lg:py-40 border-t border-border overflow-hidden">
+      <div class="absolute inset-0 grid-overlay opacity-20" aria-hidden="true"></div>
+      <svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" aria-hidden="true">
+        <path class="trajectory-path" d="M0,400 Q400,200 800,350 T1600,300" fill="none" stroke="#E0863D" stroke-width="1"/>
+        <path class="trajectory-path" d="M0,500 Q500,300 1000,450 T2000,400" fill="none" stroke="#E77A22" stroke-width="0.6"/>
+      </svg>
+      <div class="relative mx-auto max-w-[1400px] px-6 lg:px-10 text-center" data-reveal>
+        <p class="section-label mb-4">05 — Systems</p>
+        <h2 class="section-heading mb-8">Drone Showcase</h2>
+        <p class="mx-auto max-w-2xl text-muted-text text-lg">
+          From precision agriculture to urban infrastructure — every Aeroindia platform is engineered for mission reliability, autonomous intelligence, and Make in India excellence.
+        </p>
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4" data-stagger>
+          <div class="border border-border p-6 text-left" data-stagger-item>
+            <p class="font-mono text-2xl text-accent">6</p>
+            <p class="mt-2 section-label">Rotor Config</p>
+          </div>
+          <div class="border border-border p-6 text-left" data-stagger-item>
+            <p class="font-mono text-2xl text-accent-secondary">RTK</p>
+            <p class="mt-2 section-label">GPS Nav</p>
+          </div>
+          <div class="border border-border p-6 text-left" data-stagger-item>
+            <p class="font-mono text-2xl text-foreground">AI</p>
+            <p class="mt-2 section-label">Autonomy</p>
+          </div>
+          <div class="border border-border p-6 text-left" data-stagger-item>
+            <p class="font-mono text-2xl text-accent">IN</p>
+            <p class="mt-2 section-label">Made in India</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Workshop Highlights -->
+    <section class="relative py-24 lg:py-32 bg-surface border-t border-border">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div data-reveal>
+            <p class="section-label mb-4">05 — Education</p>
+            <h2 class="section-heading">Workshop Highlights</h2>
+            <p class="mt-6 text-muted-text leading-relaxed">
+              UDAAN 2026 brings hands-on drone engineering to the next generation. Build, fly, and understand autonomous systems through immersive workshops and live demonstrations.
+            </p>
+            <a href="events.html" class="btn-primary mt-8 inline-flex">View Events</a>
+          </div>
+          <div class="grid grid-cols-2 gap-px bg-border" data-stagger>
+            <!-- <img src="assets/workshop-placeholder-01.jpg" alt="Drone workshop participants" class="aspect-square object-cover" data-stagger-item loading="lazy">
+            <img src="assets/workshop-placeholder-02.jpg" alt="Drone demonstration flight" class="aspect-square object-cover" data-stagger-item loading="lazy"> -->
+            <img src="assets/udaan.jpeg" alt="Engineering lab session" class="col-span-2 aspect-[2/1] object-cover" data-stagger-item loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="relative py-24 border-t border-border" aria-label="Statistics">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border" data-stagger>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold text-accent" data-counter="2" data-suffix="+">0</p>
+            <p class="mt-2 section-label">Flagship Projects</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold" data-counter="10" data-suffix="+">0</p>
+            <p class="mt-2 section-label">UAV Solutions</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold text-accent-secondary" data-counter="50" data-prefix="₹" data-suffix="K">0</p>
+            <p class="mt-2 section-label">Startup Funding</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold" data-counter="3" data-suffix="+">0</p>
+            <p class="mt-2 section-label">Major Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-32 lg:py-40 border-t border-border overflow-hidden bg-surface">
+      <div class="logo-watermark-zone absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark"><img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68"></div>
+      </div>
+      <div class="relative mx-auto max-w-[1400px] px-6 lg:px-10 text-center" data-reveal>
+        <p class="section-label mb-4">Partner With Us</p>
+        <h2 class="section-heading max-w-3xl mx-auto text-balance">
+          Ready to engineer the next mission?
+        </h2>
+        <p class="mt-6 mx-auto max-w-xl text-muted-text">
+          Collaborate on custom UAV development, request a drone demonstration, or register for UDAAN 2026.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-6">
+          <a href="contact.html" class="btn-primary">Start Collaboration</a>
+          <a href="mailto:aeroindia1402@gmail.com" class="btn-secondary">aeroindia1402@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

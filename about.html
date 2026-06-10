@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Aeroindia — our story, mission, vision, and the team engineering India's aerial future.">
+  <title>About — Aeroindia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/aeroindia-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/aeroindia-logo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- STUB: Phase 5 will populate full page content -->
+    <p style="padding:8rem 2rem;color:#e0863d;font-family:monospace;">about.html — Phase 5 content pending</p>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Aeroindia — our story, mission, vision, and the team engineering India's aerial future.">
+  <title>About — Aeroindia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/aeroindia-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/aeroindia-logo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div id="site-nav"></div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════
+         PAGE HERO
+    ═══════════════════════════════════════════════ -->
+    <section class="relative min-h-[60vh] flex flex-col justify-end overflow-hidden bg-cinematic-navy pt-32 pb-20 lg:pb-28" aria-label="About hero">
+      <div class="absolute inset-0 grid-overlay opacity-20" aria-hidden="true"></div>
+
+      <!-- Ambient trajectory lines -->
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" aria-hidden="true">
+        <path class="trajectory-path" d="M-50,200 Q300,80 700,180 T1600,140" fill="none" stroke="#E0863D" stroke-width="1"/>
+        <path class="trajectory-path" d="M-50,350 Q400,250 900,330 T1800,290" fill="none" stroke="#E77A22" stroke-width="0.6" opacity="0.7"/>
+      </svg>
+
+      <!-- Watermark logo -->
+      <div class="logo-watermark-zone absolute right-6 top-24 hidden md:block" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark">
+          <img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68">
+        </div>
+      </div>
+
+      <div class="relative mx-auto w-full max-w-[1400px] px-6 lg:px-10">
+        <div class="page-hero-logo-wrap">
+          <div class="logo-plate logo-plate--hero">
+            <img src="assets/aeroindia-logo.png" alt="Aeroindia" class="logo-img logo-hero" width="200" height="76" decoding="async">
+          </div>
+        </div>
+        <p class="section-label mb-4" data-reveal>About Aeroindia</p>
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight leading-[0.92] max-w-4xl" data-reveal>
+          OUR<br>
+          <span class="text-accent">STORY</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-muted-text leading-relaxed" data-reveal>
+          Founded in 2023, Aeroindia is a student-led UAV innovation company on a mission to put Indian drone technology on the world stage.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         ORIGIN STORY
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-24 lg:py-32 border-t border-border bg-surface">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+
+          <div class="lg:col-span-5" data-reveal>
+            <p class="section-label mb-4">01 — Origin</p>
+            <h2 class="section-heading text-balance">
+              Born from a belief that India could build better.
+            </h2>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6" data-reveal>
+            <p class="text-lg text-muted-text leading-relaxed">
+              Aeroindia was founded in 2023 by a group of engineering students at RSCOE, Nagpur, united by a single conviction: that the solutions India needs can be engineered in India, for India.
+            </p>
+            <p class="text-muted-text leading-relaxed">
+              What started as a project submission became a company. Our first prototype, RAKSHAK, addressed a real problem faced by millions of Indian farmers — the manual, hazardous process of crop spraying. The idea was simple: automate it, make it precise, make it affordable.
+            </p>
+            <p class="text-muted-text leading-relaxed">
+              RSCOE's Innovation &amp; Incubation Foundation believed in us, awarding ₹50,000 in seed funding. That validation changed everything. We stopped thinking like students and started thinking like engineers with a mission.
+            </p>
+
+            <!-- Pull quote -->
+            <blockquote class="relative border-l-2 border-accent pl-6 mt-8">
+              <p class="font-display text-xl font-semibold text-foreground leading-snug">
+                "Every flight path we design advances the ambition to put Indian drone technology on the global stage."
+              </p>
+              <footer class="mt-3 font-mono text-[10px] uppercase tracking-label text-accent">Aeroindia, 2023</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         MISSION / VISION / VALUES — three cards
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-24 lg:py-32 border-t border-border" aria-labelledby="mvv-heading">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">02 — Foundation</p>
+          <h2 id="mvv-heading" class="section-heading">Mission, Vision &amp; Values</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-px bg-border" data-stagger>
+
+          <!-- Mission -->
+          <div class="card-tech bg-bg relative group" data-stagger-item>
+            <div class="hud-corner hud-corner--tl"></div>
+            <div class="hud-corner hud-corner--br"></div>
+            <span class="font-mono text-[10px] text-accent tracking-label">Mission</span>
+            <h3 class="mt-4 font-display text-2xl font-bold">Build. Fly. Serve India.</h3>
+            <p class="mt-4 text-sm text-muted-text leading-relaxed">
+              Engineer sustainable, mission-ready UAV systems — made in India — for farmers protecting crops, medics delivering supplies, responders surveying disaster zones, and industries monitoring critical infrastructure.
+            </p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </div>
+
+          <!-- Vision -->
+          <div class="card-tech bg-bg relative group" data-stagger-item>
+            <div class="hud-corner hud-corner--tl"></div>
+            <div class="hud-corner hud-corner--br"></div>
+            <span class="font-mono text-[10px] text-accent-secondary tracking-label">Vision</span>
+            <h3 class="mt-4 font-display text-2xl font-bold">India's aerial future, engineered here.</h3>
+            <p class="mt-4 text-sm text-muted-text leading-relaxed">
+              To be the leading Make-in-India drone company — exporting autonomous UAV platforms that combine aerospace precision with innovation-first R&amp;D, recognised on the global stage.
+            </p>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent-secondary transition-all duration-500 group-hover:w-full"></div>
+          </div>
+
+          <!-- Values -->
+          <div class="card-tech bg-bg relative group" data-stagger-item>
+            <div class="hud-corner hud-corner--tl"></div>
+            <div class="hud-corner hud-corner--br"></div>
+            <span class="font-mono text-[10px] text-accent tracking-label">Values</span>
+            <h3 class="mt-4 font-display text-2xl font-bold">Precision. Purpose. Resilience.</h3>
+            <ul class="mt-4 space-y-3 text-sm text-muted-text">
+              <li class="flex gap-3">
+                <span class="text-accent shrink-0">—</span>
+                <span><strong class="text-foreground/80">Engineering-first:</strong> every decision is driven by what works, not what impresses.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-accent shrink-0">—</span>
+                <span><strong class="text-foreground/80">Mission-aligned:</strong> we build for real problems faced by real people.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-accent shrink-0">—</span>
+                <span><strong class="text-foreground/80">Made in India:</strong> design, build, and iterate locally — for global impact.</span>
+              </li>
+            </ul>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         INNOVATION TIMELINE (detailed)
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-24 lg:py-32 bg-surface border-t border-border">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">03 — Trajectory</p>
+          <h2 class="section-heading">Our Timeline</h2>
+        </div>
+
+        <div class="relative" data-stagger>
+          <!-- Vertical rule -->
+          <div class="absolute left-0 top-0 bottom-0 w-px bg-border ml-[27px] lg:ml-[39px]" aria-hidden="true"></div>
+
+          <div class="space-y-0">
+
+            <div class="relative flex gap-8 py-10 border-b border-border/50" data-stagger-item>
+              <span class="font-mono text-sm text-accent w-14 shrink-0 lg:w-20 pt-1">2023</span>
+              <div>
+                <p class="font-display text-lg font-semibold text-foreground">Aeroindia Founded</p>
+                <p class="mt-2 text-sm text-muted-text leading-relaxed max-w-lg">
+                  A group of RSCOE engineering students formalise a shared vision: to build drone solutions for India's most urgent problems. The company is born.
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex gap-8 py-10 border-b border-border/50" data-stagger-item>
+              <span class="font-mono text-sm text-accent w-14 shrink-0 lg:w-20 pt-1">2024</span>
+              <div>
+                <p class="font-display text-lg font-semibold text-foreground">RAKSHAK Development &amp; ₹50,000 RSCOE Funding</p>
+                <p class="mt-2 text-sm text-muted-text leading-relaxed max-w-lg">
+                  RAKSHAK — our autonomous agricultural spraying drone — moves from concept to prototype. RSCOE's Innovation &amp; Incubation Foundation awards Aeroindia ₹50,000 in seed capital, validating our approach.
+                </p>
+                <div class="mt-4 flex gap-4 flex-wrap">
+                  <span class="font-mono text-[10px] uppercase tracking-label border border-accent/30 px-3 py-1 text-accent">₹50K Seed Funding</span>
+                  <span class="font-mono text-[10px] uppercase tracking-label border border-border px-3 py-1 text-muted-text">RAKSHAK v1.0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex gap-8 py-10 border-b border-border/50" data-stagger-item>
+              <span class="font-mono text-sm text-accent w-14 shrink-0 lg:w-20 pt-1">2025</span>
+              <div>
+                <p class="font-display text-lg font-semibold text-foreground">NIRMAL Wins Emerging Innovation Award</p>
+                <p class="mt-2 text-sm text-muted-text leading-relaxed max-w-lg">
+                  NIRMAL, our high-rise window-cleaning drone, wins the Emerging Innovation Award at Yuvahan 2025 and is exhibited at the CII NexGen Mobility Show — placing Aeroindia on India's national innovation map.
+                </p>
+                <div class="mt-4 flex gap-4 flex-wrap">
+                  <span class="font-mono text-[10px] uppercase tracking-label border border-accent/30 px-3 py-1 text-accent">Emerging Innovation Award</span>
+                  <span class="font-mono text-[10px] uppercase tracking-label border border-border px-3 py-1 text-muted-text">CII NexGen Mobility Show</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex gap-8 py-10" data-stagger-item>
+              <span class="font-mono text-sm text-accent-secondary w-14 shrink-0 lg:w-20 pt-1">2026</span>
+              <div>
+                <p class="font-display text-lg font-semibold text-foreground">UDAAN 2026 — Training India's Drone Workforce</p>
+                <p class="mt-2 text-sm text-muted-text leading-relaxed max-w-lg">
+                  Aeroindia launches UDAAN 2026, a hands-on drone engineering workshop for the next generation of Indian aerospace engineers — combining build sessions, autonomous flight demonstrations, and industry mentorship.
+                </p>
+                <div class="mt-4">
+                  <a href="events.html" class="btn-primary">View UDAAN 2026</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         STATS STRIP
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-20 border-t border-border" aria-label="Aeroindia by the numbers">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border" data-stagger>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold text-accent" data-counter="2023" data-suffix="">0</p>
+            <p class="mt-2 section-label">Year Founded</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold" data-counter="2" data-suffix="+">0</p>
+            <p class="mt-2 section-label">Flagship UAVs</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold text-accent-secondary" data-counter="3" data-suffix="+">0</p>
+            <p class="mt-2 section-label">Major Awards</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-12 text-center" data-stagger-item>
+            <p class="font-display text-5xl lg:text-6xl font-bold" data-counter="50" data-prefix="₹" data-suffix="K">0</p>
+            <p class="mt-2 section-label">Seed Funding</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         TEAM
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-24 lg:py-32 bg-surface border-t border-border" aria-labelledby="team-heading">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16" data-reveal>
+          <div>
+            <p class="section-label mb-4">04 — People</p>
+            <h2 id="team-heading" class="section-heading">The Team</h2>
+          </div>
+          <p class="text-muted-text max-w-sm text-sm leading-relaxed">
+            A multidisciplinary crew of engineers, designers, and pilots united by one goal: flight that serves India.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border" data-stagger>
+
+          <!-- Team card 1 -->
+          <article class="team-card" data-stagger-item>
+            <span class="team-card__index font-mono text-[10px] text-accent/40 tracking-label">01</span>
+            <div class="team-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-accent">
+                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </div>
+            <h3 class="team-card__name">Founders</h3>
+            <p class="team-card__role">Leadership &amp; Vision</p>
+            <p class="team-card__desc">The core founding team sets the strategic direction, manages partnerships, and drives the mission from concept to flight-ready product.</p>
+            <span class="team-card__accent-line" aria-hidden="true"></span>
+          </article>
+
+          <!-- Team card 2 -->
+          <article class="team-card" data-stagger-item>
+            <span class="team-card__index font-mono text-[10px] text-accent/40 tracking-label">02</span>
+            <div class="team-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-accent">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="team-card__name">Avionics &amp; Systems</h3>
+            <p class="team-card__role">Engineering Core</p>
+            <p class="team-card__desc">Responsible for flight controller integration, RTK GPS navigation, autonomous payload systems, and all embedded firmware on RAKSHAK and NIRMAL.</p>
+            <span class="team-card__accent-line" aria-hidden="true"></span>
+          </article>
+
+          <!-- Team card 3 -->
+          <article class="team-card" data-stagger-item>
+            <span class="team-card__index font-mono text-[10px] text-accent/40 tracking-label">03</span>
+            <div class="team-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-accent">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3 class="team-card__name">Mechanical Design</h3>
+            <p class="team-card__role">Structures &amp; Fabrication</p>
+            <p class="team-card__desc">Frame design, motor mounts, payload cradles, and material selection — balancing structural integrity with the payload and flight-time requirements of each platform.</p>
+            <span class="team-card__accent-line" aria-hidden="true"></span>
+          </article>
+
+          <!-- Team card 4 -->
+          <article class="team-card" data-stagger-item>
+            <span class="team-card__index font-mono text-[10px] text-accent/40 tracking-label">04</span>
+            <div class="team-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-accent">
+                <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
+              </svg>
+            </div>
+            <h3 class="team-card__name">Software &amp; AI</h3>
+            <p class="team-card__role">Autonomy &amp; Intelligence</p>
+            <p class="team-card__desc">Mission planning software, ground station interfaces, computer vision for obstacle avoidance, and autonomous flight path generation for precision operations.</p>
+            <span class="team-card__accent-line" aria-hidden="true"></span>
+          </article>
+
+          <!-- Team card 5 -->
+          <article class="team-card" data-stagger-item>
+            <span class="team-card__index font-mono text-[10px] text-accent/40 tracking-label">05</span>
+            <div class="team-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-accent">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="team-card__name">Outreach &amp; Events</h3>
+            <p class="team-card__role">Education &amp; Community</p>
+            <p class="team-card__desc">Organises UDAAN workshops, manages industry partnerships, competition entries, and builds the next generation of drone engineers through hands-on training programmes.</p>
+            <span class="team-card__accent-line" aria-hidden="true"></span>
+          </article>
+
+          <!-- Team card 6 — Join Us -->
+          <article class="team-card border-dashed" data-stagger-item>
+            <span class="team-card__index font-mono text-[10px] text-accent/40 tracking-label">06</span>
+            <div class="team-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-accent">
+                <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+              </svg>
+            </div>
+            <h3 class="team-card__name">Join Us</h3>
+            <p class="team-card__role">Open Positions</p>
+            <p class="team-card__desc">We're growing. If you're passionate about UAVs, embedded systems, AI, or aerospace engineering — we want to hear from you.</p>
+            <a href="contact.html" class="btn-primary mt-6 inline-flex text-xs">Get in Touch</a>
+            <span class="team-card__accent-line" aria-hidden="true"></span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CTA
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-32 lg:py-40 border-t border-border overflow-hidden bg-surface">
+      <div class="logo-watermark-zone absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark">
+          <img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68">
+        </div>
+      </div>
+      <div class="relative mx-auto max-w-[1400px] px-6 lg:px-10 text-center" data-reveal>
+        <p class="section-label mb-4">Work With Us</p>
+        <h2 class="section-heading max-w-3xl mx-auto text-balance">
+          Ready to build India's aerial future?
+        </h2>
+        <p class="mt-6 mx-auto max-w-xl text-muted-text">
+          Explore our projects, collaborate on custom UAV development, or register for the UDAAN 2026 workshop.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-6">
+          <a href="projects.html" class="btn-primary">Explore Projects</a>
+          <a href="contact.html"  class="btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

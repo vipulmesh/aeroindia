@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aeroindia services — agricultural spraying, medical delivery, disaster response, industrial inspection, custom engineering, and training.">
+  <title>Services — Aeroindia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/aeroindia-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/aeroindia-logo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div id="site-nav"></div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════
+         PAGE HERO
+    ═══════════════════════════════════════════════ -->
+    <section class="relative min-h-[60vh] flex flex-col justify-end overflow-hidden bg-cinematic-navy pt-32 pb-20 lg:pb-28" aria-label="Services hero">
+      <div class="absolute inset-0 grid-overlay opacity-20" aria-hidden="true"></div>
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" aria-hidden="true">
+        <path class="trajectory-path" d="M-50,180 Q400,60 900,160 T1900,120" fill="none" stroke="#E0863D" stroke-width="1"/>
+        <path class="trajectory-path" d="M-50,320 Q300,220 800,300 T1700,260" fill="none" stroke="#E77A22" stroke-width="0.6" opacity="0.7"/>
+      </svg>
+
+      <div class="logo-watermark-zone absolute right-6 top-24 hidden md:block" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark">
+          <img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68">
+        </div>
+      </div>
+
+      <div class="relative mx-auto w-full max-w-[1400px] px-6 lg:px-10">
+        <div class="page-hero-logo-wrap">
+          <div class="logo-plate logo-plate--hero">
+            <img src="assets/aeroindia-logo.png" alt="Aeroindia" class="logo-img logo-hero" width="200" height="76" decoding="async">
+          </div>
+        </div>
+        <p class="section-label mb-4" data-reveal>02 — Capabilities</p>
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight leading-[0.92] max-w-4xl" data-reveal>
+          WHAT<br>
+          <span class="text-accent">WE DO</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-muted-text leading-relaxed" data-reveal>
+          Six UAV capability domains — each solving a real problem faced by India's farmers, medics, industry, and emergency responders.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SERVICES — full detail cards
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-24 lg:py-32 border-t border-border" aria-labelledby="services-list-heading">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">01 — Services</p>
+          <h2 id="services-list-heading" class="section-heading">All Capabilities</h2>
+        </div>
+
+        <div class="space-y-px bg-border" data-stagger>
+
+          <!-- 01 Agricultural Spraying -->
+          <article id="agricultural-spraying" class="group relative grid lg:grid-cols-12 bg-bg overflow-hidden" data-stagger-item>
+            <div class="lg:col-span-1 flex items-start justify-center pt-8 pb-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-sm text-accent tracking-label [writing-mode:vertical-lr] rotate-180 hidden lg:block">01</span>
+              <span class="font-mono text-[10px] text-accent tracking-label lg:hidden">01</span>
+            </div>
+            <div class="lg:col-span-5 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-[10px] text-accent tracking-label">Agriculture UAV</span>
+              <h3 class="mt-4 font-display text-3xl lg:text-4xl font-bold tracking-tight">Agricultural Spraying</h3>
+              <p class="mt-4 text-muted-text leading-relaxed">
+                Precision crop protection and smart farming UAV solutions powered by RAKSHAK. Our autonomous spraying drones cover large agricultural areas with GPS-precise delivery — reducing chemical waste, protecting operator health, and improving yield outcomes.
+              </p>
+              <a href="projects.html#rakshak" class="btn-primary mt-8 inline-flex">See RAKSHAK</a>
+            </div>
+            <div class="lg:col-span-6 p-8 lg:p-12">
+              <p class="section-label mb-6">Capabilities</p>
+              <ul class="space-y-4">
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">RTK Precision Navigation</p>
+                    <p class="mt-1 text-xs text-muted-text">Centimetre-accurate flight paths for row-by-row field coverage.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">20L Spray Payload</p>
+                    <p class="mt-1 text-xs text-muted-text">High-capacity tank with variable-rate nozzle control.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Animal Deterrence Mode</p>
+                    <p class="mt-1 text-xs text-muted-text">Acoustic and visual deterrence payload for crop protection.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Autonomous Mission Planning</p>
+                    <p class="mt-1 text-xs text-muted-text">Pre-programmed field maps with auto-return and recharge logic.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+          <!-- 02 Medical Delivery -->
+          <article id="medical-delivery" class="group relative grid lg:grid-cols-12 bg-bg overflow-hidden" data-stagger-item>
+            <div class="lg:col-span-1 flex items-start justify-center pt-8 pb-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-sm text-accent tracking-label [writing-mode:vertical-lr] rotate-180 hidden lg:block">02</span>
+              <span class="font-mono text-[10px] text-accent tracking-label lg:hidden">02</span>
+            </div>
+            <div class="lg:col-span-5 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-[10px] text-accent tracking-label">Healthcare UAV</span>
+              <h3 class="mt-4 font-display text-3xl lg:text-4xl font-bold tracking-tight">Medical Delivery</h3>
+              <p class="mt-4 text-muted-text leading-relaxed">
+                Aerial logistics for healthcare — reaching communities when roads cannot. Our medical delivery drones transport blood, vaccines, medicines, and emergency supplies to remote or disaster-impacted areas faster than any ground vehicle.
+              </p>
+              <a href="contact.html" class="btn-primary mt-8 inline-flex">Request Demo</a>
+            </div>
+            <div class="lg:col-span-6 p-8 lg:p-12">
+              <p class="section-label mb-6">Capabilities</p>
+              <ul class="space-y-4">
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Temperature-Stable Payload Bay</p>
+                    <p class="mt-1 text-xs text-muted-text">Insulated cargo compartment for vaccines and blood products.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Long-Range Flight</p>
+                    <p class="mt-1 text-xs text-muted-text">Extended range configurations for remote PHC and tribal area access.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Safe Drop-Zone Landing</p>
+                    <p class="mt-1 text-xs text-muted-text">Precision descent with payload-release for contactless delivery.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Real-Time Tracking</p>
+                    <p class="mt-1 text-xs text-muted-text">Live telemetry for dispatch centres and healthcare coordinators.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+          <!-- 03 Disaster Response -->
+          <article id="disaster-response" class="group relative grid lg:grid-cols-12 bg-bg overflow-hidden" data-stagger-item>
+            <div class="lg:col-span-1 flex items-start justify-center pt-8 pb-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-sm text-accent tracking-label [writing-mode:vertical-lr] rotate-180 hidden lg:block">03</span>
+              <span class="font-mono text-[10px] text-accent tracking-label lg:hidden">03</span>
+            </div>
+            <div class="lg:col-span-5 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-[10px] text-accent tracking-label">Emergency UAV</span>
+              <h3 class="mt-4 font-display text-3xl lg:text-4xl font-bold tracking-tight">Disaster Response</h3>
+              <p class="mt-4 text-muted-text leading-relaxed">
+                Autonomous survey and supply drones for emergency operations. When floods, fires, or earthquakes cut off communities, Aeroindia platforms provide the first aerial view and the first supply line.
+              </p>
+              <a href="contact.html" class="btn-primary mt-8 inline-flex">Request Demo</a>
+            </div>
+            <div class="lg:col-span-6 p-8 lg:p-12">
+              <p class="section-label mb-6">Capabilities</p>
+              <ul class="space-y-4">
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Thermal + RGB Imaging</p>
+                    <p class="mt-1 text-xs text-muted-text">Dual-sensor payload for survivor detection and flood mapping.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Rapid Deployment</p>
+                    <p class="mt-1 text-xs text-muted-text">Under 5-minute field setup from case to airborne.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Emergency Supply Drop</p>
+                    <p class="mt-1 text-xs text-muted-text">Food, medicine, and communication relay package delivery.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Live Video Feed</p>
+                    <p class="mt-1 text-xs text-muted-text">Encrypted HD downlink to incident command centres.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+          <!-- 04 Industrial Inspection -->
+          <article id="industrial-inspection" class="group relative grid lg:grid-cols-12 bg-bg overflow-hidden" data-stagger-item>
+            <div class="lg:col-span-1 flex items-start justify-center pt-8 pb-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-sm text-accent tracking-label [writing-mode:vertical-lr] rotate-180 hidden lg:block">04</span>
+              <span class="font-mono text-[10px] text-accent tracking-label lg:hidden">04</span>
+            </div>
+            <div class="lg:col-span-5 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-[10px] text-accent-secondary tracking-label">Infrastructure UAV</span>
+              <h3 class="mt-4 font-display text-3xl lg:text-4xl font-bold tracking-tight">Industrial Inspection</h3>
+              <p class="mt-4 text-muted-text leading-relaxed">
+                Infrastructure monitoring and high-rise facade systems via NIRMAL. Replacing rope-access and scaffold teams with autonomous drones that inspect, photograph, and clean at altitude — safer, faster, cheaper.
+              </p>
+              <a href="projects.html#nirmal" class="btn-primary mt-8 inline-flex">See NIRMAL</a>
+            </div>
+            <div class="lg:col-span-6 p-8 lg:p-12">
+              <p class="section-label mb-6">Capabilities</p>
+              <ul class="space-y-4">
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent-secondary font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">High-Rise Facade Cleaning</p>
+                    <p class="mt-1 text-xs text-muted-text">NIRMAL's modular cleaning payload for glass and cladding surfaces.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent-secondary font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Structural Crack Detection</p>
+                    <p class="mt-1 text-xs text-muted-text">High-resolution imaging for bridge, tower, and building surveys.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent-secondary font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Solar Panel Inspection</p>
+                    <p class="mt-1 text-xs text-muted-text">Thermal imaging to identify underperforming cells across large arrays.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="text-accent-secondary font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Urban-Safe Flight Envelope</p>
+                    <p class="mt-1 text-xs text-muted-text">Designed for dense urban environments with obstacle-aware navigation.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent-secondary transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+          <!-- 05 Custom Engineering -->
+          <article id="custom-engineering" class="group relative grid lg:grid-cols-12 bg-bg overflow-hidden" data-stagger-item>
+            <div class="lg:col-span-1 flex items-start justify-center pt-8 pb-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-sm text-accent tracking-label [writing-mode:vertical-lr] rotate-180 hidden lg:block">05</span>
+              <span class="font-mono text-[10px] text-accent tracking-label lg:hidden">05</span>
+            </div>
+            <div class="lg:col-span-5 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-[10px] text-accent tracking-label">Bespoke UAV</span>
+              <h3 class="mt-4 font-display text-3xl lg:text-4xl font-bold tracking-tight">Custom Engineering</h3>
+              <p class="mt-4 text-muted-text leading-relaxed">
+                Bespoke UAV platforms from concept to flight-ready prototype. Organisations with unique mission requirements — specific payload, range, or autonomy needs — work directly with our engineering team to design, build, and certify a purpose-built solution.
+              </p>
+              <a href="contact.html" class="btn-primary mt-8 inline-flex">Start a Project</a>
+            </div>
+            <div class="lg:col-span-6 p-8 lg:p-12">
+              <p class="section-label mb-6">Process</p>
+              <ul class="space-y-4">
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="font-mono text-[10px] text-accent shrink-0 mt-0.5 w-6">01</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Mission Brief</p>
+                    <p class="mt-1 text-xs text-muted-text">Define payload, range, environment, and autonomy requirements together.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="font-mono text-[10px] text-accent shrink-0 mt-0.5 w-6">02</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Design &amp; Prototype</p>
+                    <p class="mt-1 text-xs text-muted-text">CAD modelling, simulation, and rapid physical prototyping.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="font-mono text-[10px] text-accent shrink-0 mt-0.5 w-6">03</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Test Flights</p>
+                    <p class="mt-1 text-xs text-muted-text">Iterative field testing with data-driven refinement cycles.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="font-mono text-[10px] text-accent shrink-0 mt-0.5 w-6">04</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Delivery &amp; Support</p>
+                    <p class="mt-1 text-xs text-muted-text">Flight-ready handover with operator training and documentation.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+          <!-- 06 Training & Workshops -->
+          <article id="training-workshops" class="group relative grid lg:grid-cols-12 bg-bg overflow-hidden" data-stagger-item>
+            <div class="lg:col-span-1 flex items-start justify-center pt-8 pb-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-sm text-accent tracking-label [writing-mode:vertical-lr] rotate-180 hidden lg:block">06</span>
+              <span class="font-mono text-[10px] text-accent tracking-label lg:hidden">06</span>
+            </div>
+            <div class="lg:col-span-5 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-border">
+              <span class="font-mono text-[10px] text-accent tracking-label">Education</span>
+              <h3 class="mt-4 font-display text-3xl lg:text-4xl font-bold tracking-tight">Training &amp; Workshops</h3>
+              <p class="mt-4 text-muted-text leading-relaxed">
+                UDAAN 2026 and industry partnerships building India's drone workforce. Hands-on drone engineering workshops for students and professionals — covering build, flight operations, autonomy programming, and safety protocols.
+              </p>
+              <a href="events.html" class="btn-primary mt-8 inline-flex">View UDAAN 2026</a>
+            </div>
+            <div class="lg:col-span-6 p-8 lg:p-12">
+              <p class="section-label mb-6">What You'll Learn</p>
+              <ul class="space-y-4">
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Drone Assembly &amp; Build</p>
+                    <p class="mt-1 text-xs text-muted-text">Frame construction, ESC calibration, motor mounting, and wiring.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Flight Controller Programming</p>
+                    <p class="mt-1 text-xs text-muted-text">ArduPilot / PX4 configuration and autonomous mission scripting.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 border-b border-border/50 pb-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Live Demonstration Flights</p>
+                    <p class="mt-1 text-xs text-muted-text">Hands-on piloting and autonomous mission observation in the field.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span class="text-accent font-mono text-xs shrink-0 mt-0.5">→</span>
+                  <div>
+                    <p class="text-sm font-semibold text-foreground/80">Safety &amp; Regulations</p>
+                    <p class="mt-1 text-xs text-muted-text">DGCA drone rules, airspace management, and safe operating procedures.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="absolute bottom-0 left-0 h-px w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         HOW WE WORK — process strip
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-24 lg:py-32 bg-surface border-t border-border">
+      <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+
+        <div class="mb-16" data-reveal>
+          <p class="section-label mb-4">02 — Approach</p>
+          <h2 class="section-heading">How We Engage</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border" data-stagger>
+          <div class="bg-bg p-8 lg:p-10" data-stagger-item>
+            <p class="font-mono text-3xl font-bold text-accent">01</p>
+            <h3 class="mt-4 font-display text-lg font-semibold">Discover</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">We understand your operational environment, mission requirements, and constraints before anything else.</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-10" data-stagger-item>
+            <p class="font-mono text-3xl font-bold text-accent">02</p>
+            <h3 class="mt-4 font-display text-lg font-semibold">Design</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">Our engineers specify and model the right UAV platform — selecting or adapting systems from our proven portfolio.</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-10" data-stagger-item>
+            <p class="font-mono text-3xl font-bold text-accent">03</p>
+            <h3 class="mt-4 font-display text-lg font-semibold">Deploy</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">We deliver a flight-tested solution and train your team on safe operations, maintenance, and ground control software.</p>
+          </div>
+          <div class="bg-bg p-8 lg:p-10" data-stagger-item>
+            <p class="font-mono text-3xl font-bold text-accent">04</p>
+            <h3 class="mt-4 font-display text-lg font-semibold">Support</h3>
+            <p class="mt-3 text-sm text-muted-text leading-relaxed">Ongoing technical support, firmware updates, and partnership for your next mission evolution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CTA
+    ═══════════════════════════════════════════════ -->
+    <section class="relative py-32 lg:py-40 border-t border-border overflow-hidden bg-surface">
+      <div class="logo-watermark-zone absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true">
+        <div class="logo-plate logo-plate--watermark">
+          <img src="assets/aeroindia-logo.png" alt="" class="logo-img logo-watermark" width="180" height="68">
+        </div>
+      </div>
+      <div class="relative mx-auto max-w-[1400px] px-6 lg:px-10 text-center" data-reveal>
+        <p class="section-label mb-4">Ready to Fly?</p>
+        <h2 class="section-heading max-w-3xl mx-auto text-balance">
+          Let's engineer your next mission.
+        </h2>
+        <p class="mt-6 mx-auto max-w-xl text-muted-text">
+          Request a demonstration, discuss a custom platform, or register for UDAAN 2026.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-6">
+          <a href="contact.html"  class="btn-primary">Request Demo</a>
+          <a href="projects.html" class="btn-secondary">See Our Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
